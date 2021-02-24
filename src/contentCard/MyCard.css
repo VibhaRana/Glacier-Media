@@ -1,0 +1,11 @@
+div.container :hover img{
+    opacity:0.5;
+}
+
+div.container :hover input {
+    display: block;
+}
+div.container input {
+    position:absolute;
+    display:none;
+}

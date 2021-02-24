@@ -1,0 +1,12 @@
+ .home__image {
+    width: 100%;
+    max-width: 1500px; 
+    /* max-height: 45em; */
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .home__heading {
+     text-align: center;
+     margin-left: 20em;
+ }
