@@ -7,7 +7,7 @@ export default [
       
       image:
       "/assets/Glacier media assets bracelet.jpg",
-      rating : "⭐️⭐️⭐️"
+      rating : "⭐️⭐️"
     },
     
     {

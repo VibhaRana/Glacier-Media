@@ -1,7 +1,7 @@
  .home__image {
     width: 100%;
     max-width: 1500px; 
-    /* max-height: 45em; */
+     max-height: 50em; 
     margin-left: auto;
     margin-right: auto;
  }
