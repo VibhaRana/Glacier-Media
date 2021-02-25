@@ -1,42 +1,32 @@
 #wrapper {
-    position: relative;
-    margin : 0 auto;
-    font-family: sans-serif;
-     -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; 
+  position: relative;
+  margin: 0 auto;
+  font-family: sans-serif;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-img{
-    opacity: 1;
-    display: block;
-    width:100%;
-    height: auto;
-    transition: .5s ease;
-    }
-
-.content{
-position: absolute;
-top:45%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-white-space: nowrap;
-overflow: hidden;
-border-radius: 4px
+img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
 }
 
-/* .content :hover{
-    opacity: 1;
-    background-color: black;
-    color: white;
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 4px;
 }
-.hide:hover {
-    opacity: 1;
-    background-color: black;
-    color: white;
-}   */
+
 .hide {
   /* padding: 10px 28px !important; */
   text-align: center !important;
@@ -51,57 +41,50 @@ border-radius: 4px
   margin-left: 3em;
   /* visibility: hidden; */
 }
-#wrapper:hover .img{
-    opacity: 0.4; 
+#wrapper:hover .img {
+  opacity: 0.4;
 }
-#wrapper:hover .header{
-    opacity: 0.4; 
+#wrapper:hover .header {
+  opacity: 0.4;
 }
-#wrapper:hover .description{
-    opacity: 0.4; 
+#wrapper:hover .description {
+  opacity: 0.4;
 }
-#wrapper:hover .overlay{
-    opacity: 1;
-    background-color: black;
-    color: white;
+#wrapper:hover .footer {
+  opacity: 0.4;
 }
-#wrapper:hover .content{
-    opacity: 1;
-    background-color: black;
-    color: white;
-
+#wrapper:hover .overlay {
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+#wrapper:hover .content {
+  opacity: 1;
+  background-color: black;
+  color: white;
 }
 
-#wrapper:hover .hide{
-    opacity: 1;
-    background-color: black;
-    color: white;
+#wrapper:hover .hide {
+  opacity: 1;
+  background-color: black;
+  color: white;
 }
-.content .hide{
-    font-size: 20px;
-    display: block;
-    background-color: black;
-    text-align: center;
-    /* padding: 10px; */
-    cursor: pointer
-    }
+.content .hide {
+  font-size: 20px;
+  display: block;
+  background-color: black;
+  text-align: center;
+  /* padding: 10px; */
+  cursor: pointer;
+}
 
-    .overlay{
-        opacity: 0
-        }
-        /* #wrapper:hover img{
-        opacity: 0.5
-        } */
-       
-       #wrapper:hover .content{
-           opacity: 1;
-           background-color: black;
-           color: white;
-       }
+.overlay {
+  opacity: 0;
+}
 
 
-
-
-
-
-
+#wrapper:hover .content {
+  opacity: 1;
+  background-color: black;
+  color: white;
+}

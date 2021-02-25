@@ -5,17 +5,12 @@ import {
   Card,
   Grid,
   CardContent,
-  CardActions,
   CardHeader,
   CardMedia,
   Divider,
   Button,
-  Link,
-  CardActionArea,
-  IconButton,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import ButtonFile from "../ButtonFile";
+
 import styled, { ThemeProvider } from "styled-components";
 import NoSsr from "@material-ui/core/NoSsr";
 import {
@@ -35,51 +30,52 @@ const theme = createMuiTheme({
   },
 });
 
- const StyledCard = styled(Card)`
-   ${({ theme }) => `
+const StyledCard = styled(Card)`
+  ${({ theme }) => `
   cursor: pointer;
    background-color: ${theme.palette.primary.main};
    transition: ${theme.transitions.create(["background-color", "transform"], {
-    duration: theme.transitions.duration.standard,
-  })};
+     duration: theme.transitions.duration.standard,
+   })};
   &:hover {
      background-color: ${theme.palette.secondary.main};
-    transform: scale(1);
+    transform: scale(3);
    background-image: null;
   
   }
   `}
- `;
+`;
 
 function MyCard(props) {
   const { title, description, image, price, rating } = props;
 
   return (
-    
     <div id="wrapper">
       <NoSsr>
         <ThemeProvider theme={theme}>
           <Card>
-            <CardHeader className = 'header' title={title} />
-            <CardMedia className = 'img' style={{ height: "250px" }} image={image} />
+            <CardHeader className="header" title={title} />
+            <CardMedia
+              className="img"
+              style={{ height: "250px" }}
+              image={image}
+            />
 
             <CardContent>
-              <div className = 'overlay'>
-              <div className = 'content'>
-                <Button className="hide" >
-                  Add to Cart
-                </Button>
+              <div className="overlay">
+                <div className="content">
+                  <Button className="hide">Add to Cart</Button>
                 </div>
               </div>
-               <div className = 'description'>
-              {description}
-              </div>
+              <div className="description">{description}</div>
               <Divider />
-              <Grid item style={{ flex: 1 }}>
-                Price - {price}
-              </Grid>
+              <div className="footer">
+                <Grid item style={{ flex: 1 }}>
+                  Price - {price}
+                </Grid>
 
-              {rating}
+                {rating}
+              </div>
             </CardContent>
           </Card>
         </ThemeProvider>

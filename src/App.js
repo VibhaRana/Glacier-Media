@@ -3,9 +3,9 @@ import './App.css';
 import { React } from 'react';
 import Header from './header/Header';
 import Dashboard from './dashboard/Dashboard';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid} from '@material-ui/core';
 import Content from './content/Content';
-import ButtonFile from './ButtonFile'
+
 
 function App() {
   return (
