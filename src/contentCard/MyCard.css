@@ -1,6 +1,44 @@
+#wrapper {
+    position: relative;
+    margin : 0 auto;
+    font-family: sans-serif;
+     -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; 
+}
 
+img{
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
+    transition: .5s ease;
+    }
+
+.content{
+position: absolute;
+top:45%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
+overflow: hidden;
+border-radius: 4px
+}
+
+/* .content :hover{
+    opacity: 1;
+    background-color: black;
+    color: white;
+}
+.hide:hover {
+    opacity: 1;
+    background-color: black;
+    color: white;
+}   */
 .hide {
-  padding: 10px 28px !important;
+  /* padding: 10px 28px !important; */
   text-align: center !important;
   color: white !important;
   border: solid 2px black !important;
@@ -8,39 +46,62 @@
   background-color: black;
   border-radius: 5px !important;
   text-align: center;
-  border-radius: 4px;
+
   margin: auto;
   margin-left: 3em;
   /* visibility: hidden; */
 }
-
-#wrapper :hover {
-  opacity: 0.6;
-  
+#wrapper:hover .img{
+    opacity: 0.4; 
 }
-#wrapper div > .hide {
-  visibility: hidden;
-  align-items: center;
+#wrapper:hover .header{
+    opacity: 0.4; 
 }
+#wrapper:hover .description{
+    opacity: 0.4; 
+}
+#wrapper:hover .overlay{
+    opacity: 1;
+    background-color: black;
+    color: white;
+}
+#wrapper:hover .content{
+    opacity: 1;
+    background-color: black;
+    color: white;
 
-#wrapper:hover div > .hide {
-  /* display: block;  */
-  visibility: visible;
-  align-items: center;
-  opacity: 1;
-  margin-top: 4em;
-  padding: 10px 28px !important;
-  text-align: center !important;
-  color: white !important;
-  border: solid 2px black !important;
-  z-index: 1 !important;
-  background-color: black;
-  border-radius: 5px !important;
 }
 
-/* #wrapper .hide {
-  visibility: hidden;
-  align-items: center;
-} */
+#wrapper:hover .hide{
+    opacity: 1;
+    background-color: black;
+    color: white;
+}
+.content .hide{
+    font-size: 20px;
+    display: block;
+    background-color: black;
+    text-align: center;
+    /* padding: 10px; */
+    cursor: pointer
+    }
+
+    .overlay{
+        opacity: 0
+        }
+        /* #wrapper:hover img{
+        opacity: 0.5
+        } */
+       
+       #wrapper:hover .content{
+           opacity: 1;
+           background-color: black;
+           color: white;
+       }
+
+
+
+
+
 
 

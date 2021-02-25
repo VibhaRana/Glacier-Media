@@ -17,7 +17,7 @@ function App() {
         <Dashboard />
       </Grid>
       
-      <Grid item container>
+      <Grid item container style = {{backgroundColor : "#fafafa"}}>
         <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={8}>
         <Content />

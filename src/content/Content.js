@@ -6,7 +6,7 @@ import glacierMediaList from '../data'
 function Content() {
     const getGlacierMediaCard = glacierMediaObj => {
         return (
-          <Grid item xs={12} sm={6} lg = {4} xl = {4}>
+          <Grid item xs={12} sm={6} lg = {4} xl = {4} >
             <MyCard {...glacierMediaObj} />
           </Grid>
         );

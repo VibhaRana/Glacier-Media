@@ -12,6 +12,7 @@ import {
   Button,
   Link,
   CardActionArea,
+  IconButton,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonFile from "../ButtonFile";
@@ -34,42 +35,45 @@ const theme = createMuiTheme({
   },
 });
 
-// const StyledCard = styled(Card)`
-//   ${({ theme }) => `
-//   cursor: pointer;
-//   background-color: ${theme.palette.primary.main};
-//   transition: ${theme.transitions.create(["background-color", "transform"], {
-//     duration: theme.transitions.duration.standard,
-//   })};
-//   &:hover {
-//     background-color: ${theme.palette.secondary.main};
-//     transform: scale(1);
-//     background-image: null;
+ const StyledCard = styled(Card)`
+   ${({ theme }) => `
+  cursor: pointer;
+   background-color: ${theme.palette.primary.main};
+   transition: ${theme.transitions.create(["background-color", "transform"], {
+    duration: theme.transitions.duration.standard,
+  })};
+  &:hover {
+     background-color: ${theme.palette.secondary.main};
+    transform: scale(1);
+   background-image: null;
   
-//   }
-//   `}
-// `;
+  }
+  `}
+ `;
 
 function MyCard(props) {
   const { title, description, image, price, rating } = props;
 
   return (
+    
     <div id="wrapper">
       <NoSsr>
         <ThemeProvider theme={theme}>
           <Card>
-            <CardHeader title={title} />
-            <CardMedia style={{ height: "250px" }} image={image} />
+            <CardHeader className = 'header' title={title} />
+            <CardMedia className = 'img' style={{ height: "250px" }} image={image} />
 
             <CardContent>
-              <div>
-                <a className="hide" href="#">
+              <div className = 'overlay'>
+              <div className = 'content'>
+                <Button className="hide" >
                   Add to Cart
-                </a>
+                </Button>
+                </div>
               </div>
-
+               <div className = 'description'>
               {description}
-
+              </div>
               <Divider />
               <Grid item style={{ flex: 1 }}>
                 Price - {price}
